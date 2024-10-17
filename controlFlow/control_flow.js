@@ -57,3 +57,34 @@ let authenticationStatus = isAuthenticated ? "Authenticated" : "Not authenticate
 
 
 console.log("Authentication Status:", authenticationStatus);
+
+//roles: Employee, ENrolled Member, Subscriber, Non-Subscriber
+
+let person =  "Employee";
+
+let authorized;
+
+switch (person)
+{
+    case "Employee":
+        authorized = " You are authorized to have access to Dietary services";
+        break;
+    
+    case "Enrolled Member":
+        authorized = "you are authorized to have access to Dietary services and one-on-one interaction with a dietician";
+        break;
+    
+     case "Subscriber":
+        authorized = "you have partial access to facilitate Dietary services";
+        break;
+    case "Non-Subscriber":
+        authorized = "you need to enroll or at least subscribe first to avail this facility!"
+        break;
+    
+}
+
+console.log(authorized)
+
+
+
+
